@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDi-Gg-Lrf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qQ9-2X-Q17">
+            <objects>
+                <viewController id="yDi-Gg-Lrf" customClass="ViewController" customModule="test_CFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="deU-W7-Kgv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJd-U9-yps">
+                                <rect key="frame" x="16" y="36" width="171.5" height="171.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RJd-U9-yps" secondAttribute="height" multiplier="1:1" id="CaP-Ze-DC9"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="D9Z-y2-3JQ">
+                                <rect key="frame" x="203.5" y="36" width="155.5" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baD-Bc-x7b">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Vml-K3-E6T"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="applyFilter:" destination="yDi-Gg-Lrf" eventType="touchUpInside" id="ihG-bV-TLF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wh-xL-1Tx">
+                                        <rect key="frame" x="0.0" y="35" width="155.5" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="applyFilter:" destination="yDi-Gg-Lrf" eventType="touchUpInside" id="Gqz-eS-n9u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blU-0g-FHc">
+                                        <rect key="frame" x="0.0" y="70" width="155.5" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="applyFilter:" destination="yDi-Gg-Lrf" eventType="touchUpInside" id="gNy-De-Yek"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Wh-xL-1Tx" firstAttribute="height" secondItem="blU-0g-FHc" secondAttribute="height" id="Toi-eL-gHD"/>
+                                    <constraint firstItem="baD-Bc-x7b" firstAttribute="height" secondItem="5Wh-xL-1Tx" secondAttribute="height" id="bSY-yc-s2J"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TN-kc-ZS3">
+                                <rect key="frame" x="79" y="107" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addOriginalImageAction:" destination="yDi-Gg-Lrf" eventType="touchUpInside" id="chs-8S-CHc"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="68c-Sf-8WN">
+                                <rect key="frame" x="0.0" y="227.5" width="375" height="439.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ukO-ki-TRa">
+                                    <size key="itemSize" width="375" height="212"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="clM-xb-EFU" customClass="FilterImageCollectionViewCell" customModule="test_CFT" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FQl-YS-V2h">
+                                                    <rect key="frame" x="8" y="8" width="359" height="196"/>
+                                                </imageView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Srf-2b-2GB">
+                                                    <rect key="frame" x="8" y="105" width="359" height="2"/>
+                                                </progressView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Srf-2b-2GB" firstAttribute="centerY" secondItem="clM-xb-EFU" secondAttribute="centerY" id="6Tp-Ce-M7p"/>
+                                            <constraint firstItem="FQl-YS-V2h" firstAttribute="top" secondItem="clM-xb-EFU" secondAttribute="topMargin" id="SXr-nt-A9i"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Srf-2b-2GB" secondAttribute="trailing" id="Y2d-iq-BDd"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="FQl-YS-V2h" secondAttribute="trailing" id="eVj-sh-nyb"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="FQl-YS-V2h" secondAttribute="bottom" id="eq1-YY-9Xq"/>
+                                            <constraint firstItem="Srf-2b-2GB" firstAttribute="leading" secondItem="clM-xb-EFU" secondAttribute="leadingMargin" id="uCN-04-1dK"/>
+                                            <constraint firstItem="FQl-YS-V2h" firstAttribute="leading" secondItem="clM-xb-EFU" secondAttribute="leadingMargin" id="wfg-6h-pg2"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="FQl-YS-V2h" id="Qco-t1-MBX"/>
+                                            <outlet property="progressView" destination="Srf-2b-2GB" id="ikj-BL-tRl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="yDi-Gg-Lrf" id="dUb-xH-jaa"/>
+                                    <outlet property="delegate" destination="yDi-Gg-Lrf" id="gVR-fb-F7o"/>
+                                </connections>
+                            </collectionView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ot6-PV-NA9">
+                                <rect key="frame" x="16" y="121" width="171.5" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RJd-U9-yps" firstAttribute="trailing" secondItem="1mH-ua-PYQ" secondAttribute="centerX" id="1t1-0l-x3A"/>
+                            <constraint firstItem="68c-Sf-8WN" firstAttribute="top" secondItem="RJd-U9-yps" secondAttribute="bottom" constant="20" id="4tl-Xb-Mud"/>
+                            <constraint firstItem="ot6-PV-NA9" firstAttribute="centerY" secondItem="RJd-U9-yps" secondAttribute="centerY" id="69b-vz-ejW"/>
+                            <constraint firstItem="D9Z-y2-3JQ" firstAttribute="top" secondItem="RJd-U9-yps" secondAttribute="top" id="75Y-zn-Xyd"/>
+                            <constraint firstItem="1mH-ua-PYQ" firstAttribute="trailing" secondItem="68c-Sf-8WN" secondAttribute="trailing" id="GYP-Ss-wee"/>
+                            <constraint firstItem="ot6-PV-NA9" firstAttribute="trailing" secondItem="RJd-U9-yps" secondAttribute="trailing" id="H2C-gi-zc6"/>
+                            <constraint firstItem="RJd-U9-yps" firstAttribute="leading" secondItem="deU-W7-Kgv" secondAttribute="leadingMargin" id="JE4-UQ-wcA"/>
+                            <constraint firstItem="ot6-PV-NA9" firstAttribute="leading" secondItem="RJd-U9-yps" secondAttribute="leading" id="Ouq-ev-G97"/>
+                            <constraint firstItem="1mH-ua-PYQ" firstAttribute="bottom" secondItem="68c-Sf-8WN" secondAttribute="bottom" id="ZU4-OM-CLs"/>
+                            <constraint firstItem="3TN-kc-ZS3" firstAttribute="centerY" secondItem="RJd-U9-yps" secondAttribute="centerY" id="aB5-1M-VwM"/>
+                            <constraint firstItem="D9Z-y2-3JQ" firstAttribute="leading" secondItem="RJd-U9-yps" secondAttribute="trailing" constant="16" id="ctd-4m-5Yn"/>
+                            <constraint firstItem="3TN-kc-ZS3" firstAttribute="centerX" secondItem="RJd-U9-yps" secondAttribute="centerX" id="fu8-vf-8ef"/>
+                            <constraint firstItem="68c-Sf-8WN" firstAttribute="leading" secondItem="1mH-ua-PYQ" secondAttribute="leading" id="hI2-JD-jYW"/>
+                            <constraint firstItem="RJd-U9-yps" firstAttribute="top" secondItem="1mH-ua-PYQ" secondAttribute="top" constant="16" id="jfH-np-d27"/>
+                            <constraint firstItem="1mH-ua-PYQ" firstAttribute="trailing" secondItem="D9Z-y2-3JQ" secondAttribute="trailing" constant="16" id="zaX-5M-qig"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1mH-ua-PYQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="68c-Sf-8WN" id="JD3-kJ-Zsn"/>
+                        <outlet property="loadImageProgress" destination="ot6-PV-NA9" id="EGI-7v-T7N"/>
+                        <outlet property="originalImageView" destination="RJd-U9-yps" id="6Pv-OV-d4B"/>
+                        <outlet property="selectionImageButton" destination="3TN-kc-ZS3" id="8xm-xP-Ysn"/>
+                        <outletCollection property="filterButtons" destination="baD-Bc-x7b" collectionClass="NSMutableArray" id="UmZ-Vk-vTK"/>
+                        <outletCollection property="filterButtons" destination="5Wh-xL-1Tx" collectionClass="NSMutableArray" id="RFA-TM-lJf"/>
+                        <outletCollection property="filterButtons" destination="blU-0g-FHc" collectionClass="NSMutableArray" id="YNI-2a-WDu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyW-iN-ewD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
