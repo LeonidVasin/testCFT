@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FilterImaViewController: UIViewController {
     
     fileprivate var filterImages: [FilterImageViewData] = []
     
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: FilterImageView {
+extension FilterImaViewController: FilterImageView {
     func startLoadImage() {
         selectionImageButton.isHidden = true
         originalImageView.isHidden = true
@@ -206,7 +206,7 @@ extension ViewController: FilterImageView {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension FilterImaViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filterImagePresenter.filterImagesCount()
     }
@@ -221,19 +221,19 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
-extension ViewController: UICollectionViewDelegate {
+extension FilterImaViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         filterImagePresenter.selectItem(at: indexPath.row)
     }
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension FilterImaViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.view.frame.width, height: 200.0)
     }
 }
 
-extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension FilterImaViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.dismiss(animated: true, completion: nil)
     }

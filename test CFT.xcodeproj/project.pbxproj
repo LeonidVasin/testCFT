@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B376E2DB20BAE85B003779B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376E2DA20BAE85B003779B3 /* AppDelegate.swift */; };
-		B376E2DD20BAE85B003779B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376E2DC20BAE85B003779B3 /* ViewController.swift */; };
+		B376E2DD20BAE85B003779B3 /* FilterImaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376E2DC20BAE85B003779B3 /* FilterImaViewController.swift */; };
 		B376E2E020BAE85B003779B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B376E2DE20BAE85B003779B3 /* Main.storyboard */; };
 		B376E2E320BAE85B003779B3 /* test_CFT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B376E2E120BAE85B003779B3 /* test_CFT.xcdatamodeld */; };
 		B376E2E520BAE85D003779B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B376E2E420BAE85D003779B3 /* Assets.xcassets */; };
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		B376E2D720BAE85B003779B3 /* test CFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test CFT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B376E2DA20BAE85B003779B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B376E2DC20BAE85B003779B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B376E2DC20BAE85B003779B3 /* FilterImaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterImaViewController.swift; sourceTree = "<group>"; };
 		B376E2DF20BAE85B003779B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B376E2E220BAE85B003779B3 /* test_CFT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test_CFT.xcdatamodel; sourceTree = "<group>"; };
 		B376E2E420BAE85D003779B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,20 +72,14 @@
 		B376E2D920BAE85B003779B3 /* test CFT */ = {
 			isa = PBXGroup;
 			children = (
+				B3FDE22120BBDC94008CF0D7 /* filterImage */,
+				B3FDE22020BBDC7A008CF0D7 /* database */,
 				B3FDE21520BAF256008CF0D7 /* extentions */,
 				B376E2DA20BAE85B003779B3 /* AppDelegate.swift */,
-				B376E2DC20BAE85B003779B3 /* ViewController.swift */,
-				B3FDE21820BAF532008CF0D7 /* FilterImageCollectionViewCell.swift */,
-				B376E2EF20BAEA6B003779B3 /* FilterImageViewData.swift */,
-				B376E2F320BAF161003779B3 /* FilterImageService.swift */,
-				B376E2F120BAEBF2003779B3 /* FilterImagePresenter.swift */,
-				B3FDE21C20BBC8BD008CF0D7 /* FilterImageUrlSession.swift */,
 				B376E2DE20BAE85B003779B3 /* Main.storyboard */,
 				B376E2E420BAE85D003779B3 /* Assets.xcassets */,
 				B376E2E620BAE85D003779B3 /* LaunchScreen.storyboard */,
 				B376E2E920BAE85D003779B3 /* Info.plist */,
-				B376E2E120BAE85B003779B3 /* test_CFT.xcdatamodeld */,
-				B3FDE21E20BBD3DE008CF0D7 /* DataBase.swift */,
 			);
 			path = "test CFT";
 			sourceTree = "<group>";
@@ -97,6 +91,28 @@
 				B3FDE21A20BBA6F9008CF0D7 /* UIColor+Extentions.swift */,
 			);
 			path = extentions;
+			sourceTree = "<group>";
+		};
+		B3FDE22020BBDC7A008CF0D7 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				B376E2E120BAE85B003779B3 /* test_CFT.xcdatamodeld */,
+				B3FDE21E20BBD3DE008CF0D7 /* DataBase.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		B3FDE22120BBDC94008CF0D7 /* filterImage */ = {
+			isa = PBXGroup;
+			children = (
+				B376E2DC20BAE85B003779B3 /* FilterImaViewController.swift */,
+				B3FDE21820BAF532008CF0D7 /* FilterImageCollectionViewCell.swift */,
+				B376E2EF20BAEA6B003779B3 /* FilterImageViewData.swift */,
+				B376E2F320BAF161003779B3 /* FilterImageService.swift */,
+				B376E2F120BAEBF2003779B3 /* FilterImagePresenter.swift */,
+				B3FDE21C20BBC8BD008CF0D7 /* FilterImageUrlSession.swift */,
+			);
+			path = filterImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B376E2DD20BAE85B003779B3 /* ViewController.swift in Sources */,
+				B376E2DD20BAE85B003779B3 /* FilterImaViewController.swift in Sources */,
 				B376E2F020BAEA6B003779B3 /* FilterImageViewData.swift in Sources */,
 				B376E2F220BAEBF2003779B3 /* FilterImagePresenter.swift in Sources */,
 				B376E2F420BAF161003779B3 /* FilterImageService.swift in Sources */,
